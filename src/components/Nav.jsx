@@ -1,20 +1,30 @@
-import {Routes, Route, Link} from 'react-router-dom'
+import RightNav from './RightNav';
+import TopNav from './TopNav';
 
 
 
-function Nav (props) {
+function Nav(props) {
+    const user = props.user
+
+    const paths = {
+        "home": "/",
+        "auth": "/auth",
+        "converter": "/converter",
+        "history": "/history",
+        "contact": "/contact",
+        "about": "/about",
+        "profile": "/profile",
+        "setting": "/setting"
+    }
+
     return (
-        <nav>
-            <ul>
-                <Link to='/' className=''>Home</Link>
-                <Link to='/' className=''>converter</Link>
-                <Link to='/' className=''>History</Link>
-                <Link to='/' className=''>Contact Us</Link>
-                <Link to='/' className=''>About Us</Link>
-            </ul>
-            <Routes>
-                <Route path='/' element={}></Route>
-            </Routes>
-        </nav>
+        <>        
+        {props.position === 'right'
+            ? <RightNav user={user} paths={paths} hi='hi'/>
+            : <TopNav user={user} paths={paths}/>
+        }
+        </>
     );
 }
+
+export default Nav;

@@ -1,8 +1,11 @@
-import guest_image from '../images/guest.jpg'
+import guest_image from '../images/guest.jpg';
+import { Link } from "react-router-dom";
 
 
 function TopNav(props) {
-    let user = props.user
+    const user = props.user
+    const paths = props.paths
+    console.log('paths', props.paths)
 
     return (
         <div id='top_nav_component'>
@@ -10,19 +13,19 @@ function TopNav(props) {
             <div className="left">
                 <ul className="nav">
                     <li className="nav-item">
-                        <a className="nav-link home" href="/">Home</a>
+                        <Link to={paths.home} className="nav-link home">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link converter" href="/">Converter</a>
+                        <Link to={paths.converter} className="nav-link converter">Converter</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link History" href="/">History</a>
+                        <Link to={paths.history} className="nav-link History">History</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link contact-us" href="/">Contact Us</a>
+                        <Link to={paths.contact} className="nav-link contact-us">Contact Us</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link contact-us" href="/">About Us</a>
+                        <Link to={paths.about} className="nav-link contact-us">About Us</Link>
                     </li>
                 </ul>
             </div>
@@ -35,22 +38,22 @@ function TopNav(props) {
                         </button>
                         
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <li><a className="dropdown-item" href="/">Profile</a></li>
-                            <li><a className="dropdown-item" href="/">Settings</a></li>
-                            <li><a className="dropdown-item" href="/">Logout</a></li>
+                            <li><Link to={paths.profile} className="dropdown-item">Profile</Link></li>
+                            <li><Link to={paths.setting} className="dropdown-item">Settings</Link></li>
+                            <li><Link to={paths.auth} className="dropdown-item">Logout</Link></li>
                         </ul>
                     </div>
                 ) : (
-                    <a href="/" className="register_login" >
+                    <Link to={paths.auth} className="register_login" >
                         <ul className="nav">             
                             <li className="nav-item">
-                                <a className="nav-link contact-us" href="/">Register/Login</a>
+                                <Link to={paths.auth} className="nav-link">Register/Login</Link>
                             </li>
                         </ul>
                         <div className="image_div">
                             <img className="image rounded-circle" src={guest_image} alt="users profile"/>
                         </div>
-                    </a>
+                    </Link>
                 )}
             </div>
         </div>
@@ -59,4 +62,4 @@ function TopNav(props) {
 
 
 
-export default TopNav
+export default TopNav;

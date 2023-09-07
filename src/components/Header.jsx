@@ -1,5 +1,4 @@
-import TopNav from './TopNav'
-import RightNav from './RightNav'
+import Nav from './Nav';
 
 
 function Header(props) {
@@ -15,11 +14,11 @@ function Header(props) {
                 </div>
 
                 <div className="nav_div">
-                    <div className="top_nav">
-                        <TopNav user={user}/>             
+                    <div className="top_nav">           
+                        <Nav user={user} position='top'/>             
                     </div>
                     <div className="right_nav">
-                        <RightNav user={user}/>
+                        <Nav user={user} position='right'/>             
                     </div>
                 </div>
             </div>            
@@ -28,4 +27,4 @@ function Header(props) {
 }
 
 
-export default Header
+export default Header;

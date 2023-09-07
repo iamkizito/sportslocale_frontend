@@ -1,14 +1,3 @@
-// import Auth from './auth/Auth'
-
-// function Main(props) {
-//     return (
-//         <main id='main'>
-//             <Auth/>
-//         </main>
-//     );
-// }
-
-// export default Main
 
 
 function Main(props) {
@@ -19,4 +8,4 @@ function Main(props) {
     );
 }
 
-export default Main
+export default Main;

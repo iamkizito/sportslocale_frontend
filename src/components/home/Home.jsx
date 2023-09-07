@@ -1,14 +1,15 @@
 import Header from "../Header";
+import Main from "../Main";
 import Footer from "../Footer";
 import logo from '../../images/sportslocale.png'
 
-function Home () {
+function Home() {
     return (
         <div id="home">
             <Header logo={logo}/>
-            <main>
-                hello
-            </main>
+            <Main>
+                Hello
+            </Main>
             <Footer/>
         </div>
     );
