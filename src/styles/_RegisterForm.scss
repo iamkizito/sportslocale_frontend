@@ -1,0 +1,20 @@
+
+#register {
+    max-width: 500px;
+    h1 {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+    }
+    .register_form {
+        input {
+            margin-bottom: 10px;
+        }
+        .invalid {
+            border: 1px solid red;
+        }
+        .valid {
+            border: 1px solid green;
+        }  
+    }
+    
+}

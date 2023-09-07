@@ -1,0 +1,43 @@
+
+#top_nav_component {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .left {
+        display: flex;
+        align-items: center;
+        ul {
+            li {
+                &:hover {
+                    background-color: #0b1a4d;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+
+        .register_login {
+            display: flex;
+            align-items: center;
+
+            .image_div {
+
+                .image {
+                    object-fit: cover;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid black;
+                }
+            }
+
+        }
+    } 
+
+    .nav-link {
+        color: white;
+    }
+}

@@ -1,0 +1,42 @@
+@import './variables';
+@import './mixins';
+
+
+body {
+
+    @import './_Header';
+    @import './_Main';
+    @import './_Footer';
+
+
+    #loader {
+        display: none;
+        position: absolute;  /* relative to parent */
+        left: 50%;
+        top: 120px;
+        transform: translate(-50%,-50%);
+        z-index: 10;
+        width: 45px;
+        height: 45px;
+        border: 7px solid #ffa502;
+        border-radius: 50%;
+        border-top: 7px solid #333953;
+        opacity: 0.6;
+        animation: spin 1s linear infinite;   
+    }
+    @keyframes spin {
+        /* Note: the  translate(-50%,-50%) is to help in the correct centering of the loader */
+        0% { transform: translateX(-50%) rotate(0deg); }
+        100% { transform: translateX(-50%) rotate(360deg); }
+    }  
+    
+}
+
+
+
+
+
+
+
+
+

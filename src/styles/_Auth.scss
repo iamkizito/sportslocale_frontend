@@ -1,0 +1,49 @@
+@import './variables';
+
+#auth {
+
+    @import './RegisterForm';
+    @import './SignInForm';
+    @import './Oauth';
+
+    max-width: 500px;
+
+    #auth_toggle {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        
+
+        .wrapper {
+            display: flex;
+            background-color: lightgrey;
+            border-radius: 10px;
+            cursor: pointer;
+
+            .toggle {
+                font-size: 1.3rem;
+                padding: 0 8px;
+            }
+
+            .toggle_on {
+                border-radius: 10px;
+                background-color: white;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .or {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        span {
+            margin: 0 5px;
+        }
+        hr {
+            flex: 1
+        }
+    }
+
+}

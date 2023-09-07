@@ -1,0 +1,103 @@
+
+#right_nav_component {
+    display: flex;
+
+    /* off-canvas-trigger/btn */
+    .right_offcanvas_trigger {
+        text-align: end;
+        padding-right: 5px;
+    
+        .bi{
+            font-size: 1.8rem;
+        }
+    }
+    
+    /* Add a black background color to the off-canvas */
+    .offcanvas {
+        background-color: #1a1d29;
+        overflow: hidden;
+        width: 70%;
+
+        /* offcanvas-head*/
+        .offcanvas-head {
+            
+            .profile {
+                display: flex;
+                margin: 0px 20px;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                align-items: center;
+        
+                /* set the profile image size on off-canvas */
+                .image {
+                    object-fit: cover;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+        
+                /* set the profile image details font size on off-canvas */
+                .details .username {
+                    color: #cb8313;
+                }
+            }
+        }
+        
+        /* Style the links inside the off canvas body */
+        .offcanvas-body {
+        
+            nav {
+                min-height: 100%; 
+                border-radius: 10px;
+                padding: 0px 5px;
+                background-color: #303341;
+            }
+        
+            ul {
+                li {
+                    display: block;
+                    text-decoration: none;
+                    list-style: none;
+                }
+            }
+        
+            .nav_link  {
+                display: block;
+                color: #f2f2f2;
+                padding: 10px;
+                font-size: .9rem;
+                cursor: pointer;
+                border-top: 1px solid #1a1d29;
+        
+                &:last-child  {
+                    border-bottom: 1px solid #1a1d29;
+                }
+        
+                .active {
+                    /* Add a color to the active/current link */
+                    background-color: #04AA6D;
+                    color: white;
+                    border-bottom: none;
+                }
+            }
+            
+            .sub-category1 {
+                border-top: 1px solid #1a1d29;
+                margin-left: 10px;
+            }
+        
+            .sub-category2 {
+                margin-left: 20px;
+            }
+        
+            .sub-category-item {
+                margin-left: 20px;
+                font-size: inherit;
+                display: block;
+                color: #f2f2f2;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    }  
+}

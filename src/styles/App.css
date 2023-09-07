@@ -1,0 +1,194 @@
+body {
+  /* media queries -------------------------------------------------------------------*/
+}
+body #header_component {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(51, 57, 83);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+body #header_component .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+}
+body #header_component .wrapper .logo_div {
+  display: flex;
+  max-width: 120px;
+  margin-right: 50px;
+}
+body #header_component .wrapper .logo_div .logo_image {
+  width: 100%;
+  margin-top: 5px;
+}
+body #header_component .wrapper .nav_div {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+body #header_component .wrapper .nav_div .top_nav {
+  display: none;
+  flex: 1;
+}
+body #header_component .wrapper .nav_div .top_nav #top_nav_component {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body #header_component .wrapper .nav_div .top_nav #top_nav_component .left {
+  display: flex;
+  align-items: center;
+}
+body #header_component .wrapper .nav_div .top_nav #top_nav_component .left ul li:hover {
+  background-color: #0b1a4d;
+}
+body #header_component .wrapper .nav_div .top_nav #top_nav_component .right {
+  display: flex;
+  align-items: center;
+}
+body #header_component .wrapper .nav_div .top_nav #top_nav_component .right .register_login {
+  display: flex;
+  align-items: center;
+}
+body #header_component .wrapper .nav_div .top_nav #top_nav_component .right .register_login .image_div .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+body #header_component .wrapper .nav_div .top_nav #top_nav_component .nav-link {
+  color: white;
+}
+body #header_component .wrapper .nav_div .right_nav {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component {
+  display: flex;
+  /* off-canvas-trigger/btn */
+  /* Add a black background color to the off-canvas */
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .right_offcanvas_trigger {
+  text-align: end;
+  padding-right: 5px;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .right_offcanvas_trigger .bi {
+  font-size: 1.8rem;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas {
+  background-color: #1a1d29;
+  overflow: hidden;
+  width: 70%;
+  /* offcanvas-head*/
+  /* Style the links inside the off canvas body */
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-head .profile {
+  display: flex;
+  margin: 0px 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  align-items: center;
+  /* set the profile image size on off-canvas */
+  /* set the profile image details font size on off-canvas */
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-head .profile .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-head .profile .details .username {
+  color: #cb8313;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-body nav {
+  min-height: 100%;
+  border-radius: 10px;
+  padding: 0px 5px;
+  background-color: #303341;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-body ul li {
+  display: block;
+  text-decoration: none;
+  list-style: none;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-body .nav_link {
+  display: block;
+  color: #f2f2f2;
+  padding: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-top: 1px solid #1a1d29;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-body .nav_link:last-child {
+  border-bottom: 1px solid #1a1d29;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-body .nav_link .active {
+  /* Add a color to the active/current link */
+  background-color: #04AA6D;
+  color: white;
+  border-bottom: none;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-body .sub-category1 {
+  border-top: 1px solid #1a1d29;
+  margin-left: 10px;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-body .sub-category2 {
+  margin-left: 20px;
+}
+body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcanvas .offcanvas-body .sub-category-item {
+  margin-left: 20px;
+  font-size: inherit;
+  display: block;
+  color: #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 900px) {
+  body #header_component .wrapper {
+    max-width: 90%;
+  }
+  body #header_component .wrapper .nav_div .top_nav {
+    display: flex;
+  }
+  body #header_component .wrapper .nav_div .right_nav {
+    display: none;
+  }
+}
+body #main {
+  margin-top: 50px;
+}
+body #loader {
+  display: none;
+  position: absolute; /* relative to parent */
+  left: 50%;
+  top: 120px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+  border: 7px solid #ffa502;
+  border-radius: 50%;
+  border-top: 7px solid #333953;
+  opacity: 0.6;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  /* Note: the  translate(-50%,-50%) is to help in the correct centering of the loader */
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}/*# sourceMappingURL=App.css.map */

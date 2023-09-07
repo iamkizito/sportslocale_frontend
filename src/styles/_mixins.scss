@@ -1,0 +1,17 @@
+@mixin flex_centralize($height, $direction) {
+    // to be set on parent of divs to centralize.
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $height;
+    flex-direction: $direction;
+}
+
+@mixin position_centralize() {
+    /* 3 steps to align div to the center of its container*/    
+    /* to be set on the div to be positioned. Note: set parent div (container) to relative also */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
