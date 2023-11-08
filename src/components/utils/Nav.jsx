@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import guest_image from '../../images/guest.jpg';
-import paths from "../../paths";
+import {paths} from "../../variables";
 
 
 

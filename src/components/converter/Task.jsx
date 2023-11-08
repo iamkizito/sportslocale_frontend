@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import paths from "../../paths";
+import {paths} from "../../variables";
 import arrow from "../../images/arrow.png"
 import copy from "../../images/copy.svg"
 import { useEffect, useState } from "react";

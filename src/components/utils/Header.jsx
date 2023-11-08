@@ -3,7 +3,7 @@ import Nav from './Nav';
 import { endpoints } from '../../testData';
 import logo from '../../images/sportslocale.png';
 import { Link } from 'react-router-dom';
-import paths from '../../paths';
+import {paths} from '../../variables';
 
 
 const Header = (props) => {

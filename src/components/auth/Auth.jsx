@@ -6,7 +6,7 @@ import Footer from "../utils/Footer";
 import Main from "../utils/Main";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import paths from "../../paths";
+import {paths} from "../../variables";
 
 
 function Auth() {

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const ConverterForm = (props) => {
     const platforms = props.platforms

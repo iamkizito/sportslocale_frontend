@@ -3,7 +3,7 @@ import Home from './components/home/Home';
 import Converter from './components/converter/Converter';
 import History from './components/history/History';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import paths from './paths';
+import {paths} from './variables';
 import './styles/App.css';
 
 export function App() {

@@ -2,7 +2,7 @@ import Header from "../utils/Header";
 import Main from "../utils/Main";
 import Footer from "../utils/Footer";
 import { Link } from "react-router-dom";
-import paths from "../../paths";
+import {paths} from "../../variables";
 
 import convert from "../../images/convert.jpg"
 import stake_smart from "../../images/stake_smart.jpg"

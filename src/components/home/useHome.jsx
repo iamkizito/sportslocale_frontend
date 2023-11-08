@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { endpoints } from "../../testData";
 import { useNavigate } from "react-router";
-import paths from "../../paths";
+import {paths} from "../../variables";
 
 export const dataTemplate = {
     'user': {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { host, endpoints } from "../../testData";
 import { useNavigate } from "react-router-dom";
-import paths from "../../paths";
+import {paths} from "../../variables";
 import Spinner from "../utils/Spiner";
 import Notice from "../utils/Notice";
 

@@ -6,9 +6,11 @@ import ConverterForm from "./ConverterForm";
 import logo from '../../images/sportslocale.png'
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import paths from "../../paths";
+import { paths } from "../../variables";
 import { host, endpoints } from "../../testData";
 import { useNavigate } from "react-router-dom";
+
+
 
 const Converter = (props) => {
     const test_tasks = [{
@@ -25,7 +27,7 @@ const Converter = (props) => {
     const [tasks, setTasks] = useState(test_tasks)
     const [platforms, setPlatforms] = useState(['easywin', 'bet9ja'])
 
-    const [loading, error, data] = useConverterEffect()
+    const {loading, error, data} = useConverterEffect()
 
     return (
         <div id="converter">
