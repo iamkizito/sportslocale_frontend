@@ -1,11 +1,11 @@
 
-#signin {
+#register {
     max-width: 500px;
     h1 {
         font-size: 1.2rem;
         padding-bottom: 10px;
     }
-    .signin_form {
+    .register_form {
         input {
             margin-bottom: 10px;
         }
@@ -14,7 +14,13 @@
         }
         .valid {
             border: 1px solid green;
-        }  
+        } 
+        
+        button {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
     }
     
 }

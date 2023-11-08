@@ -1,0 +1,42 @@
+
+#converter {
+    main {
+        // display: flex;
+        // flex-direction: column;
+
+        section {
+            // width: 80%
+            margin-bottom: 20px
+        }
+    
+    
+        #new_task_section {
+            h2 {
+                text-align: center;
+            }
+            .converter_form {
+                padding: 10px;
+                @import './ConverterForm' ;
+            }
+        }
+
+        #recent_tasks_section {
+            h3 {
+                text-align: center;
+            }
+    
+            .recent_tasks {
+                padding: 10px;
+                @import './Tasks' ;
+            }
+
+            .view-all {
+                display: block;
+                text-align: center;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

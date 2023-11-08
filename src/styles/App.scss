@@ -3,10 +3,17 @@
 
 
 body {
+    // general styles
+    @import './Header';
+    @import './Main';
+    @import './Footer';
 
-    @import './_Header';
-    @import './_Main';
-    @import './_Footer';
+    // page styles
+    @import './auth/Auth';
+    // @import './home/Home';
+    @import './home/Home';
+    @import './converter/Converter';
+    @import './history/History';
 
 
     #loader {

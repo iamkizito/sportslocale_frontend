@@ -1,0 +1,74 @@
+
+
+.task {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0;
+
+    .top {
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: flex;
+
+        .left {
+            flex: 1;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 1px 0;
+        margin-bottom: 10px;
+
+        .from, .arrow, .to {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .from {
+            flex: 1;
+        }
+
+        .arrow {
+            flex: 1;
+        }
+
+        .to {
+            flex: 1;
+        }
+
+        .platform {
+            font-weight: bold;
+        }
+        .booking_code {
+            font-size: 1.2rem;
+        }
+
+        .result {
+            display: flex;
+            gap: 5px;
+        }
+    }
+
+    .bottom {
+        .view-details {
+            text-align: center;
+            background-color: lightgrey;
+            border-radius: 10px;
+        }
+    }
+
+}

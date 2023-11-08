@@ -167,6 +167,463 @@ body #header_component .wrapper .nav_div .right_nav #right_nav_component .offcan
 }
 body #main {
   margin-top: 50px;
+  min-height: 700px;
+}
+body #footer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #footer .socialmedia {
+  display: flex;
+  justify-content: center;
+}
+body #footer .socialmedia img {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+body #footer .socialmedia img:hover {
+  box-shadow: 0 0 2px 0 grey;
+}
+body #auth {
+  max-width: 500px;
+}
+body #auth #register {
+  max-width: 500px;
+}
+body #auth #register h1 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+body #auth #register .register_form input {
+  margin-bottom: 10px;
+}
+body #auth #register .register_form .invalid {
+  border: 1px solid red;
+}
+body #auth #register .register_form .valid {
+  border: 1px solid green;
+}
+body #auth #register .register_form button {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+body #auth #signin {
+  max-width: 500px;
+}
+body #auth #signin h1 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+body #auth #signin .signin_form input {
+  margin-bottom: 10px;
+}
+body #auth #signin .signin_form .invalid {
+  border: 1px solid red;
+}
+body #auth #signin .signin_form .valid {
+  border: 1px solid green;
+}
+body #auth #signin .signin_form button {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+body #auth #oauth {
+  margin-top: 25px;
+}
+body #auth #oauth h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+body #auth #oauth .oauth_options {
+  display: flex;
+  justify-content: space-between;
+}
+body #auth #oauth .oauth_options .oauth_option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px grey;
+  cursor: pointer;
+  width: 28%;
+  padding: 5px;
+}
+body #auth #oauth .oauth_options .oauth_option img {
+  width: 28%;
+  padding-right: 5px;
+}
+body #auth #auth_toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+body #auth #auth_toggle .wrapper {
+  display: flex;
+  background-color: lightgrey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body #auth #auth_toggle .wrapper .toggle {
+  font-size: 1.2rem;
+  padding: 0 8px;
+}
+body #auth #auth_toggle .wrapper .toggle_on {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 3px 0;
+}
+body #auth .or {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body #auth .or span {
+  margin: 0 5px;
+}
+body #auth .or hr {
+  flex: 1;
+}
+body #home main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #home main .section {
+  width: 80%;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+body #home main #section-one, body #home main #section-two {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+body #home main #section-one .content, body #home main #section-two .content {
+  flex: 1;
+  display: flex;
+  min-width: 300px;
+  max-width: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #home main #section-one .content p, body #home main #section-two .content p {
+  font-size: 1rem;
+}
+body #home main #section-one .image, body #home main #section-two .image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  height: 400px;
+}
+body #home main #section-one .image img, body #home main #section-two .image img {
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 300px;
+  border-top-right-radius: 300px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #home main #supports {
+  display: flex;
+  flex-direction: column;
+}
+body #home main #supports h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+body #home main #supports .supports {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+body #home main #supports .supports .support {
+  flex: 1;
+  box-shadow: 0 0 1px 0;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 300px;
+  max-width: 500px;
+  box-shadow: 0 0 2px 0;
+}
+body #home main #supports .supports .support h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+body #home main #supports .supports .support .image {
+  width: 100%;
+  height: 250px;
+}
+body #home main #supports .supports .support .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+body #home main #partners h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body #home main #partners > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+body #home main #partners > div .left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+body #home main #partners > div .left h3 {
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: end;
+}
+body #home main #partners > div .left p {
+  text-align: end;
+}
+body #home main #partners > div .left .button {
+  padding: 10px;
+  border: 2px solid black;
+}
+body #home main #partners > div .right {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body #home main #partners > div .right .partner-image {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  justify-self: center;
+}
+body #home main #partners > div .right .partner-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 900px) {
+  body #home main .section {
+    width: 90%;
+  }
+  body #home main #section-one .left {
+    order: 2;
+  }
+  body #home main #section-one .right {
+    order: 1;
+  }
+  body #home main #section-one .image, body #home main #section-two .image {
+    height: 300px;
+  }
+  body #home main #partners > div .left {
+    align-items: center;
+  }
+  body #home main #partners > div .left h3 {
+    width: 100%;
+    text-align: center;
+  }
+  body #home main #partners > div .left p {
+    text-align: justify;
+  }
+}
+body #converter main section {
+  margin-bottom: 20px;
+}
+body #converter main #new_task_section h2 {
+  text-align: center;
+}
+body #converter main #new_task_section .converter_form {
+  padding: 10px;
+}
+body #converter main #new_task_section .converter_form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 2px;
+  border-radius: 10px;
+}
+body #converter main #new_task_section .converter_form form fieldset {
+  width: 100%;
+  margin-bottom: 10px;
+}
+body #converter main #new_task_section .converter_form form button {
+  width: 200px;
+  margin-bottom: 20px;
+}
+body #converter main #recent_tasks_section h3 {
+  text-align: center;
+}
+body #converter main #recent_tasks_section .recent_tasks {
+  padding: 10px;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 0;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .top {
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .top .left {
+  flex: 1;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .top .right {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .center {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 1px 0;
+  margin-bottom: 10px;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .from, body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .arrow, body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .to {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .from {
+  flex: 1;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .arrow {
+  flex: 1;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .to {
+  flex: 1;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .platform {
+  font-weight: bold;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .booking_code {
+  font-size: 1.2rem;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .center .result {
+  display: flex;
+  gap: 5px;
+}
+body #converter main #recent_tasks_section .recent_tasks #tasks .task .bottom .view-details {
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+body #converter main #recent_tasks_section .view-all {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+body #history main .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+body #history main .wrapper .filters {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  border-radius: 10px;
+}
+body #history main .wrapper .filters .filter {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+}
+body #history main .wrapper .filters .selected {
+  box-shadow: 0 0 2px 0;
+  border-radius: 10px;
+  background-color: white;
+}
+body #history main .wrapper .tasks {
+  width: 100%;
+}
+body #history main .wrapper .tasks #tasks .task {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 0;
+}
+body #history main .wrapper .tasks #tasks .task .top {
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+}
+body #history main .wrapper .tasks #tasks .task .top .left {
+  flex: 1;
+}
+body #history main .wrapper .tasks #tasks .task .top .right {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body #history main .wrapper .tasks #tasks .task .center {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 1px 0;
+  margin-bottom: 10px;
+}
+body #history main .wrapper .tasks #tasks .task .center .from, body #history main .wrapper .tasks #tasks .task .center .arrow, body #history main .wrapper .tasks #tasks .task .center .to {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #history main .wrapper .tasks #tasks .task .center .from {
+  flex: 1;
+}
+body #history main .wrapper .tasks #tasks .task .center .arrow {
+  flex: 1;
+}
+body #history main .wrapper .tasks #tasks .task .center .to {
+  flex: 1;
+}
+body #history main .wrapper .tasks #tasks .task .center .platform {
+  font-weight: bold;
+}
+body #history main .wrapper .tasks #tasks .task .center .booking_code {
+  font-size: 1.2rem;
+}
+body #history main .wrapper .tasks #tasks .task .center .result {
+  display: flex;
+  gap: 5px;
+}
+body #history main .wrapper .tasks #tasks .task .bottom .view-details {
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 10px;
 }
 body #loader {
   display: none;

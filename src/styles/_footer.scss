@@ -1,5 +1,25 @@
 
 
-// .wrapper {
+#footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-// }
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        
+        img {
+            margin: 10px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0 0 2px 0 grey;
+            }
+        }
+
+    }
+}

@@ -2,6 +2,7 @@
 
 #main {
     margin-top: 50px;
+    min-height: 700px;
 }
 
 
@@ -9,6 +10,8 @@
 
 /* media queries -------------------------------------------------------------------*/
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:900px) {
+    #main {
+    }
 
 }

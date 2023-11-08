@@ -1,7 +1,6 @@
-@import './variables';
+@import '../variables';
 
 #auth {
-
     @import './RegisterForm';
     @import './SignInForm';
     @import './Oauth';
@@ -22,14 +21,14 @@
             cursor: pointer;
 
             .toggle {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 padding: 0 8px;
             }
 
             .toggle_on {
                 border-radius: 10px;
                 background-color: white;
-                border: 1px solid black;
+                box-shadow: 0 0 3px 0;
             }
         }
     }
@@ -47,3 +46,4 @@
     }
 
 }
+

@@ -1,0 +1,212 @@
+// designing home using mainly grid for layout
+
+#home {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .section {
+            width: 80%;
+            margin-bottom: 50px;
+        }
+
+        #section-one, #section-two {
+            display: grid;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 20px;
+    
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-size: 1.0rem;
+                }
+            }
+    
+            .image {  
+                display: grid;  
+                grid-template-rows: 400px;          
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 150px;
+                    border-bottom-left-radius: 300px;
+                    border-top-right-radius: 300px;
+                    object-fit: cover;
+                }
+            }
+
+        }
+
+        #section-one {
+            grid-template-columns: 1fr 600px;
+        }
+        #section-two {
+            grid-template-columns: 600px 1fr;
+        }
+    
+        #supports {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+    
+            h2 {
+                text-align: center;
+                padding: 20px 0;
+            }
+    
+            .supports {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+    
+                .support {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    box-shadow: 0 0 1px 0;
+                    border-radius: 10px;
+                    padding: 10px;
+                    box-shadow: 0 0 2px 0;
+    
+                    h3 {
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                        text-align: center;
+                        margin: 20px 0;
+                    }
+    
+                    .image {
+                        width: 100%;
+                        height: 250px;
+    
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+    
+        }
+    
+        #partners {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            > div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+        
+                .left {
+                    display:flex;
+                    flex-direction: column;
+                    align-items: end;
+
+        
+                    h3 {
+                        width: 50%;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        text-align: end;
+                    }
+                    
+                    p {
+                        text-align: end;
+                    }
+        
+                    .button {
+                        padding: 10px;
+                        border: 2px solid black;
+                    }
+                }
+        
+                .right {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+        
+                    .partner-image {
+                        width: 100px;
+                        height: 100px;
+                        align-self: center;
+                        justify-self: center;
+        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+        
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    #home {
+        main  {
+            .section {
+                width: 90%;
+            }
+
+            #section-one, #section-two {
+                grid-template-columns: 1fr;
+                .image {
+                    grid-template-rows: 300px; 
+                }
+            }
+
+            #section-one {
+                .content {
+                    order: 2;
+                }
+                .image {
+                    order: 1;
+                }
+            }
+
+            #supports {
+                .supports {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            
+    
+            #partners {
+                > div {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    .left {
+                        align-items: center;
+                        h3 {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        
+                        p {
+                            text-align: justify;
+                        }
+                    }  
+                } 
+            }
+        }
+
+    }
+}

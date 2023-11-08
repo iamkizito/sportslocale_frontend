@@ -1,16 +1,21 @@
+import { useEffect, useState } from 'react';
 import Nav from './Nav';
+import { endpoints } from '../../testData';
+import logo from '../../images/sportslocale.png';
+import { Link } from 'react-router-dom';
+import paths from '../../paths';
 
 
-function Header(props) {
-    let user = {'authenticated': true, "username": 'kizii', "balance": 9999}
+const Header = (props) => {
+    const user = props.user
 
     return (
         <header id="header_component"> 
             <div className="wrapper">           
                 <div className="logo_div">
-                    <a href="/">
-                        <img className='logo_image' src={props.logo} alt="website logo"/>
-                    </a>
+                    <Link to={paths.home}>
+                        <img className='logo_image' src={logo} alt="website logo"/>
+                    </Link>
                 </div>
 
                 <div className="nav_div">
