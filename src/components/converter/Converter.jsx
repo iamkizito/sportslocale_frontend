@@ -90,7 +90,7 @@ const useConverterEffect = () => {
     
                 const responseData = await response.json();
                 console.log(responseData)
-                if (responseData.status == 'success') {
+                if (responseData.status === 'success') {
                     setData(response.data)
                 } else {
                     setError(response.data)
