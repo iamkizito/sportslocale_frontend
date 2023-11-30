@@ -127,9 +127,10 @@ function TopNav(props) {
             <div className="right">
                 {user ? (
                     <div className="dropdown">
-                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img className="image rounded-circle" src={props.user.image} alt="users profile"/>
-                        </button>
+                        {`Credit: $${user.balance} `}
+                        <div className="btn btn-secondary dropdown" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style={{width:"40px", height:"40px", padding:"0px", borderRadius:"50%"}}>
+                            <img className="image rounded-circle" src={guest_image} style={{width:"100%", height:"100%"}} alt="users profile"/>
+                        </div>
                         
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
                             <li><Link to={paths.profile} className="dropdown-item">Profile</Link></li>
